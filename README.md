@@ -35,14 +35,14 @@ There are two `make` scripts in this project.
     a Docker container matching the AWS Linux 2 environment for Lambda runtimes to
     compile Ghostscript using the second script.
   * [`Makefile_gs`](Makefile_gs) is the script that will run inside the container,
-    and actually compile binaries. 
+    and actually compile binaries.
 
 The output will be in the `result` dir.
 
 ### Configuring the build
 
 By default, this compiles a version expecting to run as a Lambda layer from
-`/opt`. You can change the expected location by providing a `TARGET` variable 
+`/opt`. You can change the expected location by providing a `TARGET` variable
 when invoking `make`.
 
 The default Docker image used is `lambci/lambda-base-2:build`. To use a different
@@ -54,7 +54,7 @@ Modify the versions of libraries or Ghostscript directly in [`Makefile_gs`](Make
 ### Compiled info
 
 ```
-ghostscript version 9.27
+ghostscript version 10.02.1
 ```
 
 
